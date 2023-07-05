@@ -1,0 +1,120 @@
+form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-form-field input {
+
+    width: 94%;
+}
+
+button {
+    position: absolute;
+    width: 6rem;
+    font-size: 15px;
+    right: 0;
+}
+
+.jokeContainer {
+    margin: 0 auto;
+    width: 76%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jokeSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 25rem;
+    margin: 1rem 0 1rem 0;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    outline: solid 2px rgb(141, 155, 209);
+}
+
+.scroller {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+
+.messages {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.messageCard {
+    display: flex;
+    align-items: center;
+}
+
+.firstMessage {
+    background-color: #fff;
+}
+
+.messageCard img {
+    width: 30px;
+    height: auto;
+    margin: 0 1.2rem 0 0.7rem;
+}
+
+.messageCard p {
+    padding: 1.6rem 0;
+    margin: 0;
+    margin-right: 0.7rem;
+    /* word-wrap: break-word; */
+    text-align: justify;
+}
+
+.loadingDots {
+    display: flex;
+    justify-content: center;
+}
+  
+.loadingDots span {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #626262;
+    margin: 0 4px;
+}
+
+.loadingDots span:nth-child(1){
+    animation: jump 1.2s ease infinite;
+}
+.loadingDots span:nth-child(2){
+    animation: jump 1.2s ease-out infinite;
+}
+.loadingDots span:nth-child(3){
+    animation: jump 1.2s ease-in-out infinite;
+}
+
+@keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
+  
+  
+  
+  
+  

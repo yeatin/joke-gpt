@@ -1,22 +1,21 @@
 .jokeContainer {
     margin: 0 auto;
-    width: 100%;
+    width: 86%;
+    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #f0f0f0;
+    outline: solid 2px rgb(141, 155, 209);
 }
 
 .jokeSection {
     display: flex;
     flex-direction: column;
     gap: 0;
-    width: 76%;
-    height: 25rem;
-    margin: 1rem 0 1rem 0;
+    width: 100%;
     font-size: 20px;
     text-align: center;
-    background-color: #f0f0f0;
-    outline: solid 2px rgb(141, 155, 209);
 }
 
 .scroller {
@@ -25,31 +24,37 @@
 }
 
 
-.messages {
+.messageContainer {
     width: 100%;
     margin: 0;
     padding: 0;
-}
-
-.messageCard {
-    display: flex;
-    align-items: center;
+    border-bottom: solid 1px rgb(208, 208, 208);
 }
 
 .firstMessage {
     background-color: #fff;
 }
 
-.messageCard img {
+.message {
+    width: 100%;
+}
+
+.messageContent{
+    margin: 0 0.7rem 0 1rem;
+    display: flex;
+    align-items: center;
+    width: 76%;
+}
+
+.message img {
     width: 30px;
     height: auto;
     margin: 0 1.2rem 0 0.7rem;
 }
 
-.messageCard p {
+.message p {
     padding: 1.6rem 0;
     margin: 0;
-    margin-right: 0.7rem;
     /* word-wrap: break-word; */
     text-align: justify;
 }

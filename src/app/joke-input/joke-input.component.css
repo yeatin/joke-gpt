@@ -1,10 +1,16 @@
-form {
-    width: 76%;
+.formContainer {
+    height: auto;
+    width: 86%;
     margin: 0 auto;
+    padding: 2.5rem 0 1rem 0;
+}
+
+form {
+    width: 100%;
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 3.5rem;
 }
 
 mat-form-field {

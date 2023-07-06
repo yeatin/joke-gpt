@@ -6,3 +6,9 @@ Is a joke generator, depending on the language and content of the message the us
 
 ## How To Use
 Chat with it just like how you interact with ChatGPT.
+
+<!-- 
+1. 更像GPT的排版 
+2. stop generating button
+3. readme加入圖片說明
+-->

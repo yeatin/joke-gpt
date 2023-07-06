@@ -28,14 +28,17 @@ export class JokeInputComponent {
     this.gptService.getNewJoke()
       .then(data => {
         if (!data || data.error || !data.choices) {
-          this.gptService.editAssistantMessage({ role: "assistant", content: "發生預期外的錯誤，請再嘗試一次。" });
-          console.error(data);
+          this.handleError(data);
         }
+        this.gptService.changeIsGptProcessing(false);
       })
       .catch(err => {
-        this.gptService.editAssistantMessage({ role: "assistant", content: "發生預期外的錯誤，請再嘗試一次。" });
-        console.error(err);
+        this.handleError(err);
       });
-      this.gptService.changeIsGptProcessing(false);
+  }
+  handleError(err: object) {
+    this.gptService.editAssistantMessage({ role: "assistant", content: "發生預期外的錯誤，請再嘗試一次。" });
+    this.gptService.changeIsGptProcessing(false);
+    console.error(err);
   }
 }

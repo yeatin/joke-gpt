@@ -2,7 +2,7 @@
   <div class="jokeSection scroller">
     <div class="messageCard firstMessage">
       <img src="assets/favicon.png" />
-      <p>告訴我笑話的主題，語言不限！</p>
+      <p>告訴我笑話的主題，語言不限！送出空白提示的話我會自由發揮。</p>
     </div>
     <div 
       class="messages" 
@@ -27,11 +27,4 @@
     </div>
     <div id="scrollAnchor"></div>
   </div>
-  <form [formGroup]="jokeForm">
-    <mat-form-field>
-      <mat-label for="theme" class="mat-display-1">Theme of the joke</mat-label>
-      <input type="text" [disabled]="isGptProcessing" matInput id="theme" formControlName="theme" />
-    </mat-form-field>
-    <button mat-button color="primary" [disabled]="isGptProcessing" (click)="onGenerate()">Generate</button>
-  </form>
 </div>

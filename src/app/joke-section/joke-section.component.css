@@ -1,30 +1,6 @@
-form {
-    position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 3.5rem;
-}
-
-mat-form-field {
-    width: 100%;
-}
-
-mat-form-field input {
-
-    width: 94%;
-}
-
-button {
-    position: absolute;
-    width: 6rem;
-    font-size: 15px;
-    right: 0;
-}
-
 .jokeContainer {
     margin: 0 auto;
-    width: 76%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +10,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 0;
-    width: 100%;
+    width: 76%;
     height: 25rem;
     margin: 1rem 0 1rem 0;
     font-size: 20px;
@@ -112,7 +88,6 @@ button {
       transform: translateY(0);
     }
 }
-  
   
   
   

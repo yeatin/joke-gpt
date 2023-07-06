@@ -1,0 +1,23 @@
+form {
+    width: 76%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-form-field input {
+    width: 94%;
+}
+
+button {
+    position: absolute;
+    width: 6rem;
+    font-size: 15px;
+    right: 0;
+}

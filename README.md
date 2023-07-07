@@ -9,5 +9,4 @@ Chat with it just like how you interact with ChatGPT.
 
 <!-- 
 3. readme加入圖片說明
-4. separate gptObj and ngObj
 -->

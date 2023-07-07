@@ -1,11 +1,5 @@
 <div class="jokeContainer">
   <div class="jokeSection scroller">
-    <!-- <div class="message firstMessage">
-      <div class="messageContent">
-        <img src="assets/favicon.png" />
-        <p>告訴我笑話的主題，語言不限！送出空白提示的話我會自由發揮。</p>
-      </div>
-    </div> -->
     <div class="messageContainer" *ngFor="let message of ngObj"
       [style.backgroundColor]="message.role === 'assistant' ? '#fff' : '#f0f0f0'">
       <!-- using *ngIf to render messages based on message roles -->

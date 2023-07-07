@@ -59,7 +59,6 @@ export class GptService {
 
   async getNewJoke(controller: AbortController | null) {
     try {
-      console.log("gptObj=", this.gptObj.messages);
       const data = await fetch(environment.API_URL, {
         method: "POST",
         headers: {

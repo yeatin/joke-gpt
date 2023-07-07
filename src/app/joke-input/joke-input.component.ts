@@ -59,7 +59,7 @@ export class JokeInputComponent {
       this.gptService.popNgMessage();
     }
     else {
-      this.gptService.editAssistantMessage({ role: "assistant", content: "發生預期外的錯誤，請再嘗試一次。" });
+      this.gptService.editAssistantMessage({ role: "assistant", content: "⚠️⚠️ 系統超載，請再輸入一次。" });
       this.gptService.popGptMessage();
     }
     this.gptService.changeIsGptProcessing(false);

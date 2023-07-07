@@ -1,15 +1,15 @@
 <div class="jokeContainer">
   <div class="jokeSection scroller">
-    <div class="message firstMessage">
+    <!-- <div class="message firstMessage">
       <div class="messageContent">
         <img src="assets/favicon.png" />
         <p>告訴我笑話的主題，語言不限！送出空白提示的話我會自由發揮。</p>
       </div>
-    </div>
-    <div class="messageContainer" *ngFor="let message of gptObj.messages; index as i"
-      [style.backgroundColor]="i%2 === 0 ? '#fff' : '#f0f0f0'">
+    </div> -->
+    <div class="messageContainer" *ngFor="let message of ngObj"
+      [style.backgroundColor]="message.role === 'assistant' ? '#fff' : '#f0f0f0'">
       <!-- using *ngIf to render messages based on message roles -->
-      <div class="message assistantMessage" *ngIf="message.role !== 'system' && i%2 === 0">
+      <div class="message assistantMessage" *ngIf="message.role !== 'system' && message.role === 'assistant'">
         <div class="messageContent">
           <img src="assets/favicon.png" />
           <!-- Loading dots appear -->
@@ -21,7 +21,7 @@
           <p>{{message.content}}</p>
         </div>
       </div>
-      <div class="message userMessage" *ngIf="message.role !== 'system' && i%2 === 1">
+      <div class="message userMessage" *ngIf="message.role !== 'system' && message.role === 'user'">
         <div class="messageContent">
           <img src="assets/doge.png" />
           <p>{{message.content}}</p>

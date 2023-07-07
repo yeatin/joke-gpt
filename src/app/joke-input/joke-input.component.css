@@ -1,8 +1,10 @@
 .formContainer {
-    height: auto;
     width: 86%;
     margin: 0 auto;
-    padding: 2.5rem 0 1rem 0;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 form {
@@ -22,8 +24,15 @@ mat-form-field input {
 }
 
 button {
+    font-size: 15px;
+}
+
+.generateButton {
     position: absolute;
     width: 6rem;
-    font-size: 15px;
     right: 0;
+}
+
+.stopButton {
+    width: 10rem;
 }

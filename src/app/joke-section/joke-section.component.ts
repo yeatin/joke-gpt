@@ -17,6 +17,7 @@ export class JokeSectionComponent implements AfterViewChecked {
 
   }
   gptObj = this.gptService.getGptObj();
+  ngObj = this.gptService.getNgObj();
   isGptProcessing = this.gptService.getIsGptProcessing();
 
   constructor(private gptService: GptService){

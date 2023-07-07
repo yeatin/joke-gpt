@@ -1,9 +1,15 @@
-<div class="inputContainer">
+<div class="formContainer">
     <form [formGroup]="jokeForm">
         <mat-form-field>
             <mat-label for="theme" class="mat-display-1">Theme of the joke</mat-label>
             <input type="text" matInput id="theme" formControlName="theme" />
         </mat-form-field>
-        <button mat-button color="primary" [disabled]="isGptProcessing.state" (click)="onGenerate()">Generate</button>
+        <button mat-button color="primary" class="generateButton" [disabled]="isGptProcessing.state" (click)="onGenerate()">Generate</button>
     </form>
+    <button mat-raised-button class="stopButton"
+    *ngIf="isGptProcessing.state"
+    (click)="onStopGenerating(controller)"
+    >
+        Stop Generating
+    </button>
 </div>
